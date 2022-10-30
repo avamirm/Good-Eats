@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+
+  background-image: url('food.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+<h1 style="color:DeepPink;" > ADD SHELF</h1>
+<h3></h3>
+<form action="/add_user_shelf" method = "POST">
+  <label for="shelf_title"> Title:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="shelf_title" name="shelf_title" placeholder="enter title" required><br>
+  <input style="background-color:DarkSalmon;" type="submit" name ="add_shelf" value="add_shelf">
+</form> 
+<p> <a href="/logout">logout</a></p>
+
+</body>
+</html>

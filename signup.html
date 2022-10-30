@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+  background-image: url('Goodeats.png');
+}
+</style>
+</head>
+
+<body>
+<h1 style="color:DeepPink;" >SIGN UP TO GOODEATS :)</h1>
+<h3></h3>
+<form action="/signup" method = "POST">
+  <label for="username">Username:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="username" name="username" placeholder="enter username" required><br>
+  <label for="password">Password:</label><br>
+  <input style="background-color:LightGrey;" type="password" id="password" name="password" placeholder="enter password" required><br>
+  <p style="color:Purple;">Please choose user type: </p> 
+  <input type="radio" id="normal_user" name="user_type" value="normal_user" checked>
+  <label for="normal_user">Normal_user</label><br>
+  <input type="radio" id="chef" name="user_type" value="chef">
+  <label for="chef">Chef</label><br>
+  <h3></h3>
+  <input style="background-color:DarkSalmon;" type="submit" name ="signup_submition" value="signup">
+</form> 
+<p>Already have an account? <a href="/login">login</a></p>
+
+</body>
+</html>

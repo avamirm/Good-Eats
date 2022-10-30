@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+
+  background-image: url('food.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+<h1 style="color:DeepPink;" > ADD RECIPES</h1>
+<h3></h3>
+<form action="/add_chef_recipe" method = "POST">
+  <label for="recipe_title"> Title:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="recipe_title" name="recipe_title" placeholder="enter title" required><br>
+  <label for="minutes_to_ready">Minutes to get ready:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="minutes_to_ready" name="minutes_to_ready" placeholder="enter minutes" required><br>
+  <label for="ingredients">Ingredients:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="ingredients" name="ingredients" placeholder="enter ingredients" required><br>
+  <label for="tags">Tags:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="tags" name="tags" placeholder="enter tags" required><br>
+  <label for="image_address">Image address:</label><br>
+  <input style="background-color:LightGrey;" type="text" id="image_address" name="image_adress" placeholder="enter image address" required><br>
+  <p style="color:Purple;">Is recipe vegetarian? </p> 
+  <input type="radio" id="Yes" name="vegetarian_status" value="Yes" checked>
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="No" name="vegetarian_status" value="No">
+  <label for="No">No</label><br>
+  <h3></h3>
+  <input style="background-color:DarkSalmon;" type="submit" name ="add_recipe" value="add_recipe">
+</form> 
+<p> <a href="/logout">logout</a></p>
+
+</body>
+</html>
